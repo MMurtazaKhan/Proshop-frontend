@@ -5,7 +5,7 @@ import FormContainer from '../components/FormContainer'
 import {Link, useNavigate, useParams} from 'react-router-dom'
 import Message from '../components/Message'
 import { getOrderDetails, payOrder, deliverOrder } from '../actions/orderActions'
-import { ORDER_CREATE_RESET, ORDER_PAY_RESET, ORDER_DELIVER_RESET } from '../constants/orderConstants'
+import {  ORDER_PAY_RESET, ORDER_DELIVER_RESET } from '../constants/orderConstants'
 import Loader from '../components/Loader'
 import {PayPalButton} from 'react-paypal-button-v2'
 
@@ -19,7 +19,7 @@ function OrderScreen() {
     const orderDetails = useSelector(state => state.orderDetails)
     const {loading, error, order} = orderDetails
 
-    const orderPay = useSelector(state => state.orderPay)
+    // const orderPay = useSelector(state => state.orderPay)
     const {loading: loadingPay, success: successPay} = orderDetails
 
     const orderDeliver = useSelector(state => state.orderDeliver)

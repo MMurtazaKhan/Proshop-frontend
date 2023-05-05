@@ -4,7 +4,6 @@ import { LinkContainer } from 'react-router-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import { deleteUser, listUsers } from '../actions/userActions'
 import { useNavigate } from 'react-router-dom'
 import { listOrders } from '../actions/orderActions'
 
@@ -62,7 +61,7 @@ function OrderListScreen() {
 
                                         
 
-                                        <td>{order.isDelivered == true ? (
+                                        <td>{order.isDelivered === true ? (
                                             order.deliveredAt.substring(0, 10)
                                         ) : (
                                                 <i className='fas fa-check' style={{ color: 'red' }}></i>
