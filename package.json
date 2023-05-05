@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "murtaza10dec.pythonanywhere.com",
+  "proxy": "https://murtaza10dec.pythonanywhere.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
