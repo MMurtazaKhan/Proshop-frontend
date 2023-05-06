@@ -76,6 +76,9 @@ function ProductScreen() {
                 <Col md={6}>
                     <Image src={`https://murtaza10dec.pythonanywhere.com/images/${product.image}`} alt={product.name} fluid/>
                 </Col>
+                <div>
+                            <h3>https://murtaza10dec.pythonanywhere.com/images/${product.image}</h3>
+                        </div>
     
                 <Col md={3} >
                     <ListGroup variant='flush' >
